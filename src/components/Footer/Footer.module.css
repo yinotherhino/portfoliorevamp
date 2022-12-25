@@ -1,5 +1,14 @@
 .footer{
     margin-bottom: 5px;
-    position: absolute;
+    margin-top: 30px;
+    position: relative;
     bottom: 0;
+    color: #EAFDFC;
+}
+
+@media only screen and (max-width:400px){
+    .footer{
+        font-size: 15px;
+        margin-top: 30px;
+    }
 }

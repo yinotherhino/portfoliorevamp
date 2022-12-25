@@ -8,6 +8,7 @@ import SocialLinks from '../SocialLinks/SocialLinks';
 import { ButtonComp } from '../Buttons/Buttons';
 import GithubStats from '../GithubStats/GithubStats';
 import Footer from '../Footer/Footer';
+import Dp from '../Dp/Dp';
 
 const Main = () => {
   return (
@@ -26,15 +27,14 @@ const Main = () => {
           <a href='https://github.com/yinotherhino'> <GithubStats /> </a>
           </div>
         </div>
-        <Footer />
-        
         
         </Col>
-
 
         <Col md={6} sm={12}  className={styles.secondColumn + " px-5 pt-md-5"}>
-        Hello
+        <Dp />
+        <Footer />
         </Col>
+       
       </Row>
     </Container>
     </main>

@@ -1,4 +1,6 @@
-
+.container{
+    background-color: #0A2647;
+}
 
 .firstColumn{
     background-color: #EAFDFC;
@@ -11,7 +13,7 @@
 
 .secondColumn{
     min-height: 100vh;
-    background-color: #0A2647;
+    background-color: #91D8E4;
     position: relative;
 }
 
@@ -41,6 +43,9 @@
     }
     .github{
         margin-top: 50px;
+    }
+    .firstColumn, .secondColumn{
+        min-height: 100%;
     }
     
 }

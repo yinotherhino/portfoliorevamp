@@ -1,0 +1,35 @@
+.rounded{
+    /* padding: 50px; */
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #0A2647;
+    position: relative;
+}
+
+.rounded:hover{
+    background-color: black;
+}
+
+.dpimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.dpcontainer{
+padding: 20px;
+border-radius: 50%;
+background-color: #EAFDFC;
+}
+
+@media only screen and (max-width:400px){
+    .rounded{
+        padding: 100px;
+        width: 100px;
+        height: 100px;
+    }
+}
