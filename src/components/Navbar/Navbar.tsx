@@ -3,10 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { ButtonComp } from '../Buttons/Buttons';
+import styles from './Navbar.module.css';
 
 const NavbarComp = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"#0A2647", boxShadow:"rgba(0, 0, 50, 0.25) 0px 14px 28px, rgba(0, 0, 150, 0.22) 0px 10px 10px"}} variant="dark" className="px-5">
+    <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"#0A2647", boxShadow:"rgba(0, 0, 50, 0.25) 0px 14px 28px, rgba(0, 0, 150, 0.22) 0px 10px 10px"}} variant="dark" className={styles.navContainer + " px-md-5 px-sm-3 px-2"}>
       <Container fluid className='px-0'>
         <Navbar.Brand href="#home"  className='me-5'>Yinotherhino</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

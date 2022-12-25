@@ -1,9 +1,21 @@
 .header{
     font-size: 30px;
     font-weight: 700;
-    padding: 0 200px 0 0;
     color: #0A2647;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headerpara, .header{
     text-align: justify;
     text-justify: inter-word;
-    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width:600px){
+    .header{
+        font-size: 20px;
+    }
+    .headerpara{
+        font-size: 10px;
+    }
 }

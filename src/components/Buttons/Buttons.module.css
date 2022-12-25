@@ -1,13 +1,40 @@
 .nobg{
-    background-color: #2C74B3;
+    background-color: #EAFDFC;
     border: 1px solid #ffffff;
     border-radius: 4px;
-    color: #ffffff;
-    padding: 3px 15px;
+    color: #0A2647;
+    padding: 3px 25px;
 }
 
-.nobg:hover{
+.nobg:hover, .darkbtn:hover{
     border: none;
     background-color: #ffffff;
     color: #0A2647;
+}
+
+.lightbtn{
+    border-radius: 20px;
+    background-color: #EAFDFC;
+    border: none;
+    padding: 5px 35px;
+    color: #0A2647;
+}
+
+.lightbtn:hover{
+    color: #ffffff;
+    background-color: #0A2647;
+}
+
+.darkbtn{
+    color: #EAFDFC;
+    background-color: #0A2647;
+    padding: 10px 45px;
+    border-radius: 20px;
+    border: none;
+}
+
+@media only screen and (max-width:1000px){
+    .nobg, .darkbtn, .lightbtn{
+        padding: 5px 15px;
+    }
 }
