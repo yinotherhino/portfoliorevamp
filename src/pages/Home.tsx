@@ -14,9 +14,9 @@ const Home = () => {
   
     return (
       <>
+      <Navbar />
       {loading === false ? <Loader /> : (
         <>
-      <Navbar />
       <Main />
       </>
       )}
