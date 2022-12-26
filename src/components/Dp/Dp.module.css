@@ -3,7 +3,7 @@
     border-radius: 50%;
     height: 300px;
     width: 300px;
-    margin: auto;
+    margin: 20px;
     margin-top: 50px;
     background-color: #0A2647;
     position: relative;
@@ -21,7 +21,9 @@
 }
 
 .dpcontainer{
-padding: 20px;
+/* padding: 20px; */
+display: flex;
+justify-content: center;
 border-radius: 50%;
 background-color: #EAFDFC;
 }
