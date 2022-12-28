@@ -30,7 +30,7 @@ const Main = () => {
         
         </Col>
 
-        <Col md={6} sm={12}  className={styles.secondColumn + " px-5 pt-md-5"}>
+        <Col md={6} sm={12}  className={styles.secondColumn + " px-md-5 pt-md-5"}>
         <Dp />
         <Footer />
         </Col>

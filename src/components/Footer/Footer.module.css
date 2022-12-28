@@ -1,7 +1,7 @@
 .footer{
     margin-bottom: 5px;
     margin-top: 30px;
-    position: relative;
+    position: absolute;
     bottom: 0;
     color: #EAFDFC;
 }
@@ -10,5 +10,6 @@
     .footer{
         font-size: 15px;
         margin-top: 30px;
+        /* position: absolute; */
     }
 }

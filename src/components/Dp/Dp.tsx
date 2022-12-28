@@ -20,20 +20,21 @@ import Floatingimg from '../Floatingimg/Floatingimg'
 const Dp = () => {
   return (
     <div className={styles.dpcontainer}>
-      <Floatingimg src={ts} positioning={{topmargin:"15%", leftmargin:"20%"}} />
-      <Floatingimg src={node} positioning={{topmargin:"25%", leftmargin:"12%"}} />
-      <Floatingimg src={django} positioning={{topmargin:"35%", leftmargin:"20%"}} />
+      <Floatingimg src={ts} positioning={{topmargin:"15%", leftmargin:"12%"}} />
+      <Floatingimg src={node} positioning={{topmargin:"45%", leftmargin:"7%"}} />
+      <Floatingimg src={django} positioning={{bottommargin:"25%", leftmargin:"12%"}} />
 
-      <Floatingimg src={docker} positioning={{topmargin:"7%", leftmargin:"35%"}} />
+      <Floatingimg src={docker} positioning={{topmargin:"5%", leftmargin:"25%"}} />
 
       
-      <Floatingimg src={mongo} positioning={{topmargin:"40%", leftmargin:"25%"}} />
+      <Floatingimg src={mongo} positioning={{bottommargin:"5%", leftmargin:"25%"}} />
 
-      <Floatingimg src={html} positioning={{topmargin:"7%", rightmargin:"35%"}} />
+      <Floatingimg src={html} positioning={{topmargin:"5%", rightmargin:"25%"}} />
       
-      <Floatingimg src={python} positioning={{topmargin:"15%", rightmargin:"20%"}} />
-      <Floatingimg src={react} positioning={{topmargin:"25%", rightmargin:"12%"}} />
-      <Floatingimg src={css} positioning={{topmargin:"35%", rightmargin:"20%"}} />
+      <Floatingimg src={python} positioning={{topmargin:"15%", rightmargin:"12%"}} />
+      <Floatingimg src={react} positioning={{topmargin:"45%", rightmargin:"7%"}} />
+      <Floatingimg src={css} positioning={{bottommargin:"17%", rightmargin:"12%"}} />
+      
 
       <div className={styles.rounded}>
         <img src={dpimg} alt="muhammed bayero yinotherhino" className={styles.dpimg} />
