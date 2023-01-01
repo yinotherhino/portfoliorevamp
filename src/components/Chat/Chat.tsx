@@ -8,7 +8,10 @@ const Chat = () => {
   const [msg, setMsg] = useState("")
   const submitChat = (e:React.MouseEvent<SVGElement>)=>{
     e.preventDefault();
-    
+    if(!msg){
+      return;
+    }
+    const url = `http://wa.me/2348128200178?text=${msg}` 
   }
 
   // const 
