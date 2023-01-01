@@ -5,8 +5,10 @@ import { ButtonComp } from '../Buttons/Buttons'
 
 const Chat = () => {
   const [openChat, setOpenChat] = useState(false)
-  const submitChat = ()=>{
-
+  const [msg, setMsg] = useState("")
+  const submitChat = (e:React.MouseEvent<SVGElement>)=>{
+    e.preventDefault();
+    
   }
 
   // const 
@@ -20,7 +22,7 @@ const Chat = () => {
         <p>
             Message
         </p>
-        <textarea placeholder="Type message..." name="msg" required className={styles.textarea}></textarea>
+        <textarea placeholder="Type message..." name="msg" required className={styles.textarea} onChange={(e)=>{setMsg(e.target.value)}}></textarea>
         <div>
           <AiOutlineSend className={styles.sendbtn} onClick={submitChat} />
           </div>
