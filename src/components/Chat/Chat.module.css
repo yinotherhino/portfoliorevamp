@@ -1,22 +1,27 @@
 .chatContainer{
     background-color: #EAFDFC;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 50px;
-    border: 1px solid #0A2647;
     border-radius: 8px;
-    display: flex;
-    height: max-content;
     width: 20%;
-    padding-bottom: 60px;
-    flex-direction: column;
+    padding: 20px;
     margin-top: 30px;
+    z-index: 2;
+    border: 3px solid #f1f1f1;
 }
 
-.sendbtn{
-    font-size: 50px;
+.closebtn,.sendbtn{
+    font-size: 30px;
     color: #0A2647;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+    display: block;
+    float: right;
+}
+
+.textarea{
+    border: none;
+    background-color: #f1f1f1;
+    height: 100px;
+    margin: 10px 0;
+    width: 100%;
 }

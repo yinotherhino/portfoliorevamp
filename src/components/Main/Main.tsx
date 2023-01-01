@@ -36,8 +36,7 @@ const Main = () => {
         <Col md={6} sm={12}  className={styles.secondColumn + " px-md-5 pt-md-5"}>
         <Dp />
         <img src="https://www.codewars.com/users/YinotheRhino/badges/large" alt="Yinotherhino Codewars Badge" className={styles.codewars} />
-        {isChatOpen && <Chat />}
-        <ButtonComp type="chat" text='Chat' onClick={()=>{setIsChatOpen(!isChatOpen)}} />
+        <Chat />
         <Footer />
         </Col>
        
