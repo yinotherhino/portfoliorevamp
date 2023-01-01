@@ -32,7 +32,7 @@ const NavbarComp = () => {
             {/* <Nav.Link eventKey={2} href="#memes">
               Programming jokes
             </Nav.Link> */}
-            <ButtonComp type="Nobg" text='Chat'/>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -4,9 +4,9 @@ import {BiCopyright} from 'react-icons/bi'
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
         <p><BiCopyright /> Copyright 2022 yinotherhino</p>
-    </div>
+    </footer>
   )
 }
 

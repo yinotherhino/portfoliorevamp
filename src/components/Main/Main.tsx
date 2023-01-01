@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Main.module.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -9,8 +9,11 @@ import { ButtonComp } from '../Buttons/Buttons';
 import GithubStats from '../GithubStats/GithubStats';
 import Footer from '../Footer/Footer';
 import Dp from '../Dp/Dp';
+import Chat from '../Chat/Chat';
 
 const Main = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false)
+
   return (
     <main className={styles.container}>
     <Container fluid>
@@ -32,6 +35,9 @@ const Main = () => {
 
         <Col md={6} sm={12}  className={styles.secondColumn + " px-md-5 pt-md-5"}>
         <Dp />
+        <img src="https://www.codewars.com/users/YinotheRhino/badges/large" alt="Yinotherhino Codewars Badge" className={styles.codewars} />
+        {isChatOpen && <Chat />}
+        <ButtonComp type="chat" text='Chat' onClick={()=>{setIsChatOpen(!isChatOpen)}} />
         <Footer />
         </Col>
        

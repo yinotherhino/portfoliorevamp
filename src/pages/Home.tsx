@@ -10,14 +10,14 @@ const Home = () => {
     const loader = ()=>{
       return setLoading(true)
     }
-    setTimeout(loader, 1000)
+    setTimeout(loader, 2000)
   
     return (
       <>
       <Navbar />
       {loading === false ? <Loader /> : (
-        <>
-      <Loader />
+        <> 
+      <Main />
       </>
       )}
       </>

@@ -33,6 +33,11 @@
     margin-top: 100px;
 }
 
+.codewars{
+    margin-top: 50px;
+    width: 100%;
+}
+
 @media only screen and (max-width:1200px){
     .m200px{
         margin-right: 0;
