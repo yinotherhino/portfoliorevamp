@@ -12,8 +12,7 @@ const App = () => {
   
   return (
     <>
-    <Home />
-    {/* <LoadProvider>
+    <LoadProvider>
     <Navbar />
     <Routes>
 
@@ -23,7 +22,7 @@ const App = () => {
     <Route path='/cv' element={<CV />} />
 
     </Routes>
-    </LoadProvider> */}
+    </LoadProvider>
     </>
   )
 }
