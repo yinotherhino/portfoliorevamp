@@ -13,9 +13,9 @@ const NavbarComp = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features" className='me-3'>About</Nav.Link>
-            <Nav.Link href="#pricing" className='me-3'>Contact</Nav.Link>
-            <NavDropdown className='me-3' title="Works" id="collasible-nav-dropdown">
+            {/* {/* <Nav.Link href="#features" className='me-3'>About</Nav.Link> */}
+            <Nav.Link href="/public/cv.pdf" className='me-3'>CV</Nav.Link>
+            <NavDropdown className='me-3' title="Projects" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Authenticated backend service</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Rest API
@@ -24,6 +24,9 @@ const NavbarComp = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 UI Pages
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/projects">
+                More
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
