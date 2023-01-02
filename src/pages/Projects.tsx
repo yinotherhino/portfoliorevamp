@@ -6,8 +6,6 @@ import Navbar from '../components/Navbar/Navbar'
 const Projects = () => {
   return (
     <>
-      <Navbar />
-
       <div>
         <ButtonComp type='project' text='whatsapp' >
           <AiOutlineWhatsApp />

@@ -26,9 +26,9 @@ const NavbarComp = () => {
               <NavDropdown.Item href="#action/3.4">
                 UI Pages
               </NavDropdown.Item>
-              <NavDropdown.Item href="/projects">
-                More
-              </NavDropdown.Item>
+              {/* <NavDropdown.Item> */}
+              <Link to="/projects" className='dropdown-item'>More</Link>
+              {/* </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
           <Nav>
