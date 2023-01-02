@@ -4,3 +4,12 @@
     position: relative;
     z-index: 1;
 }
+
+.brand{
+    color: white;
+
+}
+
+a{
+    text-decoration: none;
+}

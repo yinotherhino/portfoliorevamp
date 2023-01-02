@@ -20,11 +20,15 @@ export const ButtonComp = ({type, text, color, isLight, onClick, children}:{type
     }
     else if(type === "project"){
         return (
-            <button className={styles.nobg +" "+ styles.project} onClick={onClick}>
+            // <button className={styles.nobg +" "+ styles.project} onClick={onClick}>
                 
-                {children}
-                 {text}
-            </button>
+            //     {children}
+            //      {text}
+            // </button>
+            <a target="_blank" href="https://github.com/yinotherhino/Express-Rest-Api/tree/main/convert_To_Mongo">
+                <button type="button" className="btn btn-lg btn-block btn-outline-dark buttons">
+                <i className="fa-brands fa-node"></i> Express Rest API</button>
+            </a>
         )
     }
     else if(isLight === true){
