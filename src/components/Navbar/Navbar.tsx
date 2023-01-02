@@ -7,6 +7,19 @@ import { ButtonComp } from '../Buttons/Buttons';
 import styles from './Navbar.module.css';
 
 const NavbarComp = () => {
+  const cvGen= ()=>{
+    fetch('cv.pdf').then(response => { 
+
+      response.blob().then(blob => { 
+          const fileURL = window.URL.createObjectURL(blob); 
+          let alink = document.createElement('a');
+          alink.href = fileURL; 
+          alink.download = 'cv.pdf';
+          alink.click();
+      }) 
+
+  }) 
+  }
   return (
     <Navbar collapseOnSelect expand="lg" style={{backgroundColor:"#0A2647", boxShadow:"rgba(0, 0, 50, 0.25) 0px 14px 28px, rgba(0, 0, 150, 0.22) 0px 10px 10px"}} variant="dark" className={styles.navContainer + " px-md-5 px-sm-3 px-2"}>
       <Container fluid className='px-0'>
@@ -14,16 +27,16 @@ const NavbarComp = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            {/* {/* <Nav.Link href="#features" className='me-3'>About</Nav.Link> */}
-            <Nav.Link href="/public/cv.pdf" className='me-3'>CV</Nav.Link>
+            <Nav.Link href="" onClick={cvGen} className='me-3'>CV</Nav.Link>
+            {/* <Nav.Item className='me-3'>CV</Nav.Item> */}
             <NavDropdown className='me-3' title="Projects" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Authenticated backend service</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/">Authenticated backend service</NavDropdown.Item>
+              <NavDropdown.Item href="/">
                 Rest API
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Graphql API</NavDropdown.Item>
+              <NavDropdown.Item href="/">Graphql API</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/">
                 UI Pages
               </NavDropdown.Item>
               {/* <NavDropdown.Item> */}
@@ -32,10 +45,6 @@ const NavbarComp = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
-            {/* <Nav.Link eventKey={2} href="#memes">
-              Programming jokes
-            </Nav.Link> */}
             
           </Nav>
         </Navbar.Collapse>
