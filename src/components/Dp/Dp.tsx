@@ -11,10 +11,6 @@ import html from '../../assets/html.png'
 import css from '../../assets/css.webp'
 import python from '../../assets/python.png'
 
-
-
-
-
 import Floatingimg from '../Floatingimg/Floatingimg'
 
 const Dp = () => {

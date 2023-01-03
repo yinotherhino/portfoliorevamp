@@ -26,7 +26,7 @@ const NavbarComp = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="" onClick={cvGen} className='me-3'>CV</Nav.Link>
+            <Nav.Link onClick={cvGen} className='me-3'>CV</Nav.Link>
             {/* <Nav.Item className='me-3'>CV</Nav.Item> */}
             <NavDropdown className='me-3' title="Projects" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/">Authenticated backend service</NavDropdown.Item>

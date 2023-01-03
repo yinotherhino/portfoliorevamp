@@ -12,7 +12,6 @@ import Dp from '../Dp/Dp';
 import Chat from '../Chat/Chat';
 
 const Main = () => {
-  const [isChatOpen, setIsChatOpen] = useState(false)
 
   return (
     <main className={styles.container}>

@@ -5,8 +5,6 @@ import Main from '../components/Main/Main'
 
 
 const Home = () => {
-  // const firstLoad = useRef(0);
-  //   const [loading, setLoading] = useState(false)
 
   const {loaded, setLoaded} = useContext(LoadContext) as LoadInterface;
 
