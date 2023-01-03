@@ -17,7 +17,7 @@ window.location.href = url;
 
   // const 
   return (
-    <>
+    <div>
       { openChat && ( <div className={styles.chatContainer}>
         <h3>
           <AiOutlineWhatsApp className={styles.wtsp} />
@@ -33,7 +33,7 @@ window.location.href = url;
         </div>
         )}
       <ButtonCompChat text='Chat' onClick={()=>{setOpenChat(true)}} />
-  </>
+  </div>
   )
 
 }

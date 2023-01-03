@@ -15,13 +15,9 @@ const Home = () => {
     setTimeout(loader, 2000)
   
     return (
-      <>
-      {loaded === 0  ? <Loader /> : (
-        <> 
-      <Main />
-      </>
-      )}
-      </>
+      <div>
+      {loaded === 0  ? (<Loader />) : (<Main />)}
+      </div>
     )  
 }
 

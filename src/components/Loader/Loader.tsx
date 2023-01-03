@@ -6,7 +6,6 @@ const Loader = () => {
   const welcomeTxt = 'Welcome to my portfolio page';
 
   return (
-    <>
     <div className={styles.loadcontainer}>
     <TypeWriterEffect
       startDelay={100}
@@ -19,7 +18,6 @@ const Loader = () => {
 
     <div className={styles.loader}> </div>
     </div>
-    </>
   )
 }
 

@@ -4,13 +4,11 @@ import { ButtonCompProject } from '../components/Buttons/Buttons'
 
 const Projects = () => {
   return (
-    <>
       <div>
         <ButtonCompProject text='whatsapp' >
           <AiOutlineWhatsApp />
         </ButtonCompProject>
       </div>
-    </>
   )
 }
 

@@ -3,9 +3,9 @@ import cv from '../../public/cv.pdf'
 
 const CV = () => {
   return (
-    <>
+    <div>
     {cv}
-    </>
+    </div>
   )
 }
 
