@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -14,6 +14,7 @@ const App = () => {
     <>
     <LoadProvider>
     <Navbar />
+    <Router>
     <Routes>
 
     <Route path='/' element={<Home />} />
@@ -22,6 +23,7 @@ const App = () => {
     <Route path='/cv' element={<CV />} />
 
     </Routes>
+    </Router>
     </LoadProvider>
     </>
   )
