@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Chat.module.css'
 import {AiOutlineSend, AiOutlineClose, AiOutlineWhatsApp} from 'react-icons/ai'
-import { ButtonComp } from '../Buttons/Buttons'
+import { ButtonCompChat } from '../Buttons/Buttons'
 
 const Chat = () => {
   const [openChat, setOpenChat] = useState(false)
@@ -32,7 +32,7 @@ window.location.href = url;
           </div>
         </div>
         )}
-      <ButtonComp type="chat" text='Chat' onClick={()=>{setOpenChat(true)}} />
+      <ButtonCompChat text='Chat' onClick={()=>{setOpenChat(true)}} />
   </>
   )
 

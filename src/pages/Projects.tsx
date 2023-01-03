@@ -1,15 +1,14 @@
 import React from 'react'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
-import { ButtonComp } from '../components/Buttons/Buttons'
-import Navbar from '../components/Navbar/Navbar'
+import { ButtonCompProject } from '../components/Buttons/Buttons'
 
 const Projects = () => {
   return (
     <>
       <div>
-        <ButtonComp type='project' text='whatsapp' >
+        <ButtonCompProject text='whatsapp' >
           <AiOutlineWhatsApp />
-        </ButtonComp>
+        </ButtonCompProject>
       </div>
     </>
   )

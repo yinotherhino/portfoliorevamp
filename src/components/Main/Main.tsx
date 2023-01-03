@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Hello from '../Hello/Hello';
 import SocialLinks from '../SocialLinks/SocialLinks';
-import { ButtonComp } from '../Buttons/Buttons';
+import { ButtonCompDark } from '../Buttons/Buttons';
 import GithubStats from '../GithubStats/GithubStats';
 import Footer from '../Footer/Footer';
 import Dp from '../Dp/Dp';
@@ -23,7 +23,7 @@ const Main = () => {
         <div className={styles.m200px}>
           <Hello />
           <div className={styles.hiresocials}>
-            <ButtonComp text="Hire me!" type="hire" />
+            <ButtonCompDark text="Hire me!" />
             <div className={styles.socials}><SocialLinks /></div>
           </div>
           <div className={styles.github}>
