@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from './Loader.module.css'
 import TypeWriterEffect from 'typewriter-effect';
+import { LoadContext, LoadInterface } from '../context/LoadContext';
 
 const Loader = () => {
-  const welcomeTxt = 'Welcome to my portfolio page';
+  const { setLoaded } = useContext(LoadContext) as LoadInterface;
 
   return (
     <div className={styles.loadcontainer}>
         <TypeWriterEffect
           onInit={(typewriter) => {
-            typewriter.typeString(welcomeTxt)
+            typewriter.typeString(`<span style="font-size:30px;font-family:'Roboto', sans-serif; font-weight:700;">Welcome to my portfolio page</span>`)
               .callFunction(() => {
-                console.log('String typed out!');
+                setTimeout(()=>{setLoaded(1)},100)
               })
               .start();
           }}

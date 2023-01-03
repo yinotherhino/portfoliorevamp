@@ -8,12 +8,6 @@ const Home = () => {
 
   const {loaded, setLoaded} = useContext(LoadContext) as LoadInterface;
 
-    const loader = ()=>{
-      return setLoaded(1)
-    }
-    
-    setTimeout(loader, 2000)
-  
     return (
       <div>
       {loaded === 0  ? (<Loader />) : (<Main />)}
