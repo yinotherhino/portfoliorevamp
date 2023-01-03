@@ -1,2 +1,5 @@
 declare module "*.module.css"
 declare module "react-typewriter-effect"
+declare module "*.png"
+declare module "*.jpg"
+declare module "*.webp"

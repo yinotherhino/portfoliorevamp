@@ -1,8 +1,5 @@
 import React from 'react'
 import styles from './SocialLinks.module.css'
-import TwitterIcon from '@mui/icons-material/Twitter';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {FiGithub} from 'react-icons/fi'
 import {FaFacebookF, FaLinkedinIn} from 'react-icons/fa'
 import {BsTwitter} from 'react-icons/bs'
