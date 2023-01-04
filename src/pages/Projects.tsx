@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButtonCompProject } from '../components/Buttons/Buttons'
 import Technologies from '../components/Technologies/Technologies'
-import styles from './projects.module.css'
+import styles from './Projects.module.css'
 
 const btnDatas = [
   {
@@ -94,19 +94,28 @@ const btnDatas = [
 ]
 
 const Projects = () => {
+
+  const handleBtn = () => {
+    
+  }
+
   return (
       <div className='px-md-5 pt-md-5 px-sm-3 pt-3 px-3' style={{backgroundColor:"#EAFDFC", height:"100vh"}} >
-        {btnDatas.map((btndata, index)=>{
-          let isLight=index%2 === 0 ? true:false;
 
-          return (<ButtonCompProject
-            key={index}
-            link={btndata.link}
-            icon={btndata.icon}
-            text={btndata.text}
-            isLight= {isLight}
-          />)
-        })}
+        <div className={styles.btnContainer} >
+          {btnDatas.map((btndata, index)=>{
+            let isLight=index%2 === 0 ? true:false;
+
+            return (<ButtonCompProject
+              key={index}
+              link={btndata.link}
+              icon={btndata.icon}
+              text={btndata.text}
+              isLight= {isLight}
+            />)
+          })}
+            <span className={styles.showAllBtn} onClick={handleBtn}>More...</span>
+        </div>
 
         <Technologies />
       </div>

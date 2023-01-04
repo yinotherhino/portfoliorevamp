@@ -1,0 +1,12 @@
+.showAllBtn{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .btnContainer a:nth-child(n+5){
+    display: none;
+    }
+    .showAllBtn{
+        display: inline-block;
+    }
+}
