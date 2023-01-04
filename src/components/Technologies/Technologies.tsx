@@ -56,9 +56,9 @@ const Technologies = () => {
         </p>
     
         {
-            techDatas.map((techData)=>{
+            techDatas.map((techData, index)=>{
                 return (
-                <SingleTech icon={techData.icon} color={techData.color} imgUrl={techData.imgUrl} />
+                <SingleTech key={index} icon={techData.icon} color={techData.color} imgUrl={techData.imgUrl} />
                 )
             })
 

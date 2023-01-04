@@ -36,8 +36,41 @@
     height: max-content;
 }
 
+@media only screen and (max-width:800px){
+    .container{
+        width: 80%;
+    }
+    .iconimg{
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .span{
+        margin-right: 30px;
+        font-size: 20px;
+        bottom: 10px;
+    }
+}
+
 @media only screen and (max-width:600px){
     .container{
         width: 100%;
+        margin-bottom: 30px
+    }
+
+    .iconimg{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        padding: 10px;
+    }
+    .iconimg{
+        height: 50px;
+        margin-bottom: 40px;
+    }
+    .span{
+        margin-right: 3px;
     }
 }

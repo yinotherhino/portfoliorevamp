@@ -39,7 +39,7 @@ const NavbarComp = () => {
               <NavDropdown.Item href="/">
                 UI Pages
               </NavDropdown.Item>
-              <Link to="/projects" className='dropdown-item'>More</Link>
+              <Link to="/projects" className='dropdown-item' style={{color:"#0A2647", textDecoration:"underline"}}>More</Link>
             </NavDropdown>
           </Nav>
           <Nav>

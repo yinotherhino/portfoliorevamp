@@ -61,3 +61,17 @@
         padding: 5px 15px;
     }
 }
+
+@media only screen and (max-width:600px){
+    .projectbtn{
+        margin: 5px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .projectbtn{
+        font-size: 10px;
+    }
+}
+

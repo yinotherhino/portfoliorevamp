@@ -95,7 +95,7 @@ const btnDatas = [
 
 const Projects = () => {
   return (
-      <div className={ ' px-md-5 pt-md-5 px-sm-3'} style={{backgroundColor:"#EAFDFC", height:"100vh"}} >
+      <div className='px-md-5 pt-md-5 px-sm-3 pt-3 px-3' style={{backgroundColor:"#EAFDFC", height:"100vh"}} >
         {btnDatas.map((btndata, index)=>{
           let isLight=index%2 === 0 ? true:false;
 
