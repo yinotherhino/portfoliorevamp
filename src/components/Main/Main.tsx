@@ -17,6 +17,12 @@ const Main = () => {
     <main className={styles.container}>
     <Container fluid>
       <Row>
+      <Col md={6} sm={12}  className={styles.secondColumn + " px-md-5 pt-md-5"}>
+        <Dp />
+        <img src="https://www.codewars.com/users/YinotheRhino/badges/large" alt="Yinotherhino Codewars Badge" className={styles.codewars} />
+        <Chat />
+        </Col>
+
         <Col md={6} sm={12} className={styles.firstColumn + " px-md-5 pt-md-5 px-sm-3"}>
         
         <div className={styles.m200px}>
@@ -29,15 +35,12 @@ const Main = () => {
           <a href='https://github.com/yinotherhino'> <GithubStats /> </a>
           </div>
         </div>
+
+        <Footer />
         
         </Col>
 
-        <Col md={6} sm={12}  className={styles.secondColumn + " px-md-5 pt-md-5"}>
-        <Dp />
-        <img src="https://www.codewars.com/users/YinotheRhino/badges/large" alt="Yinotherhino Codewars Badge" className={styles.codewars} />
-        <Chat />
-        <Footer />
-        </Col>
+
        
       </Row>
     </Container>
