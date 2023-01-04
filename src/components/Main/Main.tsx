@@ -20,7 +20,6 @@ const Main = () => {
       <Col md={6} sm={12}  className={styles.secondColumn + " px-md-5 pt-md-5"}>
         <Dp />
         <img src="https://www.codewars.com/users/YinotheRhino/badges/large" alt="Yinotherhino Codewars Badge" className={styles.codewars} />
-        <Chat />
         </Col>
 
         <Col md={6} sm={12} className={styles.firstColumn + " px-md-5 pt-md-5 px-sm-3"}>
@@ -28,7 +27,7 @@ const Main = () => {
         <div className={styles.m200px}>
           <Hello />
           <div className={styles.hiresocials}>
-            <ButtonCompDark text="Hire me!" />
+            <ButtonCompDark text="Hire me!" link="https://www.upwork.com/freelancers/~01f98ad3eb9e1854cb" />
             <div className={styles.socials}><SocialLinks /></div>
           </div>
           <div className={styles.github}>

@@ -38,10 +38,11 @@ export const ButtonCompLight = ({text}:{text:string;})=>{
     )
 }
 
-export const ButtonCompDark = ({text}:{text:string;})=>{
+export const ButtonCompDark = ({text, link}:{text:string; link?:string})=>{
     return (
-        <button className={styles.darkbtn}>
+        <a href={link}><button className={styles.darkbtn}>
             {text}
         </button>
+        </a>
     )
 }

@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Navbar from './components/Navbar/NavbarComp';
 import { LoadProvider } from './components/context/LoadContext';
 import CV from './pages/CV';
+import Chat from './components/Chat/Chat';
 
 const App = () => {
   
@@ -24,7 +25,7 @@ const App = () => {
 
     </Routes>
     </LoadProvider>
-
+    <Chat />
     </Router>
   )
 }
