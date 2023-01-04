@@ -51,6 +51,11 @@
     margin-right: 5px;
 }
 
+.projectbtn{
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
 @media only screen and (max-width:1000px){
     .nobg, .darkbtn, .lightbtn{
         padding: 5px 15px;

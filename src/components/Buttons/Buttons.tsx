@@ -19,11 +19,13 @@ export const ButtonCompChat = ({text,onClick}:{text:string;onClick?:React.MouseE
     )
 }
 
-export const ButtonCompProject = ({text, isLight, onClick, children}:{text:string; isLight?:boolean; onClick?:React.MouseEventHandler<HTMLElement>; children?:React.ReactNode;})=>{
+export const ButtonCompProject = ({link, text, icon, isLight, onClick, children}:{link:string; text:string; icon:string; isLight?:boolean; onClick?:React.MouseEventHandler<HTMLElement>; children?:React.ReactNode;})=>{
+    let bootstrapStyles = " btn btn-lg btn-block "
+    bootstrapStyles += isLight ? "btn-outline-dark buttons" : "btn-dark buttons";
     return (
-        <a target="_blank" href="https://github.com/yinotherhino/Express-Rest-Api/tree/main/convert_To_Mongo">
-            <button type="button" className="btn btn-lg btn-block btn-outline-dark buttons">
-            <i className="fa-brands fa-node"></i> Express Rest API</button>
+        <a target="_blank" href={link}>
+            <button type="button" className={styles.projectbtn + bootstrapStyles}>
+            <i className={icon}></i>{text}</button>
         </a>
     )
 }
