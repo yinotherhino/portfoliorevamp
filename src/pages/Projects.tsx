@@ -1,6 +1,6 @@
 import React from 'react'
-import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { ButtonCompProject } from '../components/Buttons/Buttons'
+import Technologies from '../components/Technologies/Technologies'
 import styles from './projects.module.css'
 
 const btnDatas = [
@@ -12,22 +12,27 @@ const btnDatas = [
   {
     link: 'https://github.com/yinotherhino/FACO',
      icon: 'fa-brands fa-node',
-      text: ' Farmers Connect app ' 
+      text: ' Farmers Connect app '
   },
   {
     link: 'https://markazbaraje.org.ng/',
      icon: 'fa-brands fa-bootstrap',
-     text: ' Responsive Bootstrap project ' 
+     text: ' HTML CSS PHP project '
   },
   {
     link: 'https://yinotherhino.github.io/Drum%20Kit%20Starting%20Files/',
     icon: 'fa-brands fa-node',
-    text: '  Drum kit ' 
+    text: '  Drum kit '
   },
   {
     link: 'https://hub.docker.com/repository/docker/yinotherhino/expressapimoviesrest',
     icon: 'fa-brands fa-docker',
     text: ' Docker ' 
+  },
+  {
+    link: 'https://github.com/yinotherhino/mini-challenges-2',
+    icon: 'fa-brands fa-node',
+    text: ' Algorithms '
   },
   {
     link: 'https://restapijade.herokuapp.com/',
@@ -50,9 +55,9 @@ const btnDatas = [
     text: ' Async javascript engineering problems '
   },
   {
-    link: 'https://github.com/yinotherhino/mini-challenges-2',
+    link: 'https://github.com/yinotherhino/QATesting',
     icon: 'fa-brands fa-node',
-    text: ' Algorithms '
+    text: '  Integration testing '
   },
   {
     link: 'https://github.com/yinotherhino/mini-challenges-3',
@@ -60,18 +65,11 @@ const btnDatas = [
     text: '  Algorithms 2 ' 
   },
   {
-    link: 'https://github.com/yinotherhino/QATesting',
-    icon: 'fa-brands fa-node',
-    text: '  Integration testing '
-  },
-  {
     link: 'https://github.com/yinotherhino/food_ordering_fullstack',
     icon: 'fa-brands fa-node',
     text: '  Food ordering app full-stack ',
     icon2: 'fa-brands fa-react'
   },
-
-
   {
     link: 'https://github.com/yinotherhino/DuplicateTransactionsProblem',
     icon: 'fa-brands fa-node',
@@ -97,17 +95,20 @@ const btnDatas = [
 
 const Projects = () => {
   return (
-      <div className={' px-md-5 pt-md-5 px-sm-3'} >
+      <div className={ ' px-md-5 pt-md-5 px-sm-3'} style={{backgroundColor:"#EAFDFC", height:"100vh"}} >
         {btnDatas.map((btndata, index)=>{
           let isLight=index%2 === 0 ? true:false;
 
           return (<ButtonCompProject
+            key={index}
             link={btndata.link}
             icon={btndata.icon}
             text={btndata.text}
             isLight= {isLight}
           />)
         })}
+
+        <Technologies />
       </div>
   )
 }

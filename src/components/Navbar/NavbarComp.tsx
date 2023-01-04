@@ -27,20 +27,19 @@ const NavbarComp = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={cvGen} className='me-3'>CV</Nav.Link>
-            {/* <Nav.Item className='me-3'>CV</Nav.Item> */}
             <NavDropdown className='me-3' title="Projects" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/">Authenticated backend service</NavDropdown.Item>
-              <NavDropdown.Item href="/">
+              <NavDropdown.Item href="https://github.com/yinotherhino/Express-Rest-Api/tree/main/convert_To_Mongo">
                 Rest API
               </NavDropdown.Item>
-              <NavDropdown.Item href="/">Graphql API</NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/yinotherhino/graphql">Graphql API</NavDropdown.Item>
+              <NavDropdown.Item href="https://markazbaraje.org.ng">School website</NavDropdown.Item>
+              <NavDropdown.Item href="https://young-coast-20585.herokuapp.com/">Metadata extraction app</NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/yinotherhino/Ridex">Ride hailing app</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/">
                 UI Pages
               </NavDropdown.Item>
-              {/* <NavDropdown.Item> */}
               <Link to="/projects" className='dropdown-item'>More</Link>
-              {/* </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
           <Nav>
