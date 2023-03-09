@@ -1,0 +1,10 @@
+.uishow-comp {
+  display: flex;
+}
+
+.uishow-comp > div {
+  margin: 10px 0 0 2%;
+  flex-grow: 1;
+  height: 100px;
+  width: 300px;
+}

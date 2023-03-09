@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/NavbarComp';
 import { LoadProvider } from './components/context/LoadContext';
 import CV from './pages/CV';
 import Chat from './components/Chat/Chat';
+import UIShow from './pages/UIShow';
 
 const App = () => {
   
@@ -22,6 +23,8 @@ const App = () => {
 
     <Route path='/projects' element={<Projects />} />
     <Route path='/cv' element={<CV />} />
+    <Route path='/uipages' element={<UIShow />} />
+    <Route path='*' element={<Home />} />
 
     </Routes>
     </LoadProvider>
