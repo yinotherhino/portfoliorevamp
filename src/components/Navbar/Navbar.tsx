@@ -59,14 +59,29 @@ const NavbarComp = () => {
               title="Projects"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Header >
+              <NavDropdown.Header>
                 Authenticated backend service
               </NavDropdown.Header>
-              <NavDropdown.Item href="https://github.com/yinotherhino/Express-Rest-Api/tree/main/convert_To_Mongo">Rest API</NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/yinotherhino/graphql_efosa">Graphql API</NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/yinotherhino/Express-Rest-Api/tree/main/convert_To_Mongo">
+                Rest API
+              </NavDropdown.Item>
+              <NavDropdown.Item href="https://github.com/yinotherhino/graphql_efosa">
+                Graphql API
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="https://seams-weathered.netlify.app/">NAP stack</NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/yinotherhino/graphql_efosa">Weather app</NavDropdown.Item>
+              <NavDropdown.Header>NAP stack </NavDropdown.Header>
+              <NavDropdown.Item href="https://seams-weathered.netlify.app/">
+                Weather app
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Header>MERN stack </NavDropdown.Header>
+              <NavDropdown.Item href="https://foodorderring.netlify.app/">
+                Food ordering app
+              </NavDropdown.Item>
+
+              <NavDropdown.Item href="https://smooze.netlify.app/">
+                Music app
+              </NavDropdown.Item>
 
               <NavDropdown.Divider />
 
