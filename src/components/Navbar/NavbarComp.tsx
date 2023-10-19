@@ -8,11 +8,9 @@ import navdata from "./navdata";
 
 const NavbarComp = () => {
   const gotoCV = () => {
-    window.location.href =
-      "https://docs.google.com/document/d/14RxLDZPv78fzyHNcUJwKcmyytYBabV2x/edit?usp=sharing&ouid=108991479419238103699&rtpof=true&sd=true";
-  };
-
-  const navHeaders = Object.keys(navdata);
+    window.location.href ="https://docs.google.com/document/d/1aB-Wtptk8EUZU87geiB4Lf31wdzq4lmU1wqFpiIk-JM/edit?usp=sharing"
+       };
+  // initiate download file
   // const cvGen= ()=>{
   //   fetch('cv.pdf').then(response => {
 
